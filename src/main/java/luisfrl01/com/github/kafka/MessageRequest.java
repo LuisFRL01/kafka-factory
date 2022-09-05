@@ -1,3 +1,3 @@
-package com.example.Kafkaexemplo;
+package luisfrl01.com.github.kafka;
 
 public record MessageRequest(String message) {}

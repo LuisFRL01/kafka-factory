@@ -1,4 +1,4 @@
-package com.example.Kafkaexemplo;
+package luisfrl01.com.github.kafka;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaListeners {
 
-    @KafkaListener(topics = "meuTopico", groupId = "grupo1")
+    @KafkaListener(topics = "${topico.nome}", groupId = "grupo1")
     void listener(String data){
         System.out.println("Recebido: " + data);
     }
